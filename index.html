@@ -1,1 +1,109 @@
-Beta 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYYNQ68Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0ZLYYNQ68Z');
+    </script>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/BugBountyMP/BugBountyMP.github.io/main/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+<!-- 
+<div class="nav-bar">
+    <button id="navToggle" class="nav-toggle">☰</button> 
+    <div id="navMenu" class="nav-menu">
+        <a href="#contact">Contact</a>
+        <a href="#patchNotes">Patch Notes</a>
+    </div>
+</div>
+-->
+<div class="header">
+    <span id="typing"></span>
+</div>
+
+     <div class="container">
+        <div class="box">
+            <a href="https:/test.com">
+                <img src="https://raw.githubusercontent.com/BugBountyMP/BugBountyMP.github.io/main/images/img1.jpg" alt="Image 1">
+            </a>
+        </div>
+        <div class="box">
+            <a href="https://bugbounty.zip">
+                <img src="https://raw.githubusercontent.com/BugBountyMP/BugBountyMP.github.io/main/images/img2.jpg" alt="Image 2">
+            </a>
+        </div>
+            </a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://x.com/tur24tur" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="mailto:no-reply@nobugescapes.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/BugBountyzip/bugbounty.zip" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+	
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const images = document.querySelectorAll('.container .box img');
+    images.forEach(image => {
+        image.onload = () => {
+            image.classList.add('loaded');
+        };
+        if (image.complete) {
+            image.onload();
+        }
+    });
+
+
+    const text = "Bug Bounty Zip MarketPlace Beta";
+    const typingSpan = document.getElementById('typing');
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            typingSpan.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 50); 
+        }
+    }
+
+    typeWriter();
+});
+
+document.getElementById('navToggle').addEventListener('click', function() {
+    var navMenu = document.getElementById('navMenu');
+    if (navMenu.style.display === 'block') {
+        navMenu.style.display = 'none';
+    } else {
+        navMenu.style.display = 'block';
+    }
+});
+
+</script>
+
+</body>
+</html>
